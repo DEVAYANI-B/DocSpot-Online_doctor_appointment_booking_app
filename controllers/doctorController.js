@@ -7,9 +7,9 @@ const getalldoctors = async (req, res) => {
   try {
     let docs;
     if (!req.locals) {
-      docs = await Doctor.find({ isDoctor: true }).populate("userId");
+      docs = await Doctor.find({ isDoctor: false }).populate("userId");
     } else {
-      docs = await Doctor.find({ isDoctor: true })
+      docs = await Doctor.find({ isDoctor: false })
         .find({
           _id: { $ne: req.locals },
         })
@@ -24,7 +24,7 @@ const getalldoctors = async (req, res) => {
 
 const getnotdoctors = async (req, res) => {
   try {
-    const docs = await Doctor.find({ isDoctor: false })
+    const docs = await Doctor.find({ isDoctor: true })
       .find({
         _id: { $ne: req.locals },
       })
@@ -56,12 +56,12 @@ const acceptdoctor = async (req, res) => {
   try {
     const user = await User.findOneAndUpdate(
       { _id: req.body.id },
-      { isDoctor: true, status: "accepted" }
+      { isDoctor: false, status: "accepted" }
     );
 
     const doctor = await Doctor.findOneAndUpdate(
       { userId: req.body.id },
-      { isDoctor: true }
+      { isDoctor: false }
     );
 
     const notification = await Notification({
@@ -81,7 +81,7 @@ const rejectdoctor = async (req, res) => {
   try {
     const details = await User.findOneAndUpdate(
       { _id: req.body.id },
-      { isDoctor: false, status: "rejected" }
+      { isDoctor: true, status: "rejected" }
     );
     const delDoc = await Doctor.findOneAndDelete({ userId: req.body.id });
 
@@ -101,7 +101,7 @@ const rejectdoctor = async (req, res) => {
 const deletedoctor = async (req, res) => {
   try {
     const result = await User.findByIdAndUpdate(req.body.userId, {
-      isDoctor: false,
+      isDoctor: true,
     });
     const removeDoc = await Doctor.findOneAndDelete({
       userId: req.body.userId,

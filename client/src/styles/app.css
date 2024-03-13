@@ -5,9 +5,10 @@
   --dark-blue: #0e148f;
   --darker-blue: #0077ff;
   --white: #fff;
-  --bold-text-color: #ffffff;
-  --light-text-color: rgb(121, 237, 243);
+  --bold-text-color: #07284f;
+  --light-text-color: rgb(43, 114, 118);
   --font-family: "Poppins", sans-serif;
+
 }
 
 * {
@@ -23,6 +24,7 @@ html {
 body {
   font-family: var(--font-family);
   background-color: var(--light-blue);
+  background: linear-gradient(115deg, #000000,  rgb(1, 75, 82),#541414);
 }
 
 li {
@@ -39,17 +41,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--bold-text-color);
+  color: white;
 }
 
 .page-heading {
   font-size: 2rem;
   text-align: center;
   margin: 0 auto;
+  color: white;
 }
 
 p {
-  color: var(--light-text-color);
+  color:#0077ff;
 }
 
 .flex-center {

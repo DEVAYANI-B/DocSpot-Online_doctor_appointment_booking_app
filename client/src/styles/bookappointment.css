@@ -19,13 +19,14 @@
   padding: 2rem;
   border: 1px solid var(--light-blue);
   border-radius: 10px;
-  color: var(--light-blue);
+  color:black;
   background-color: rgb(30, 55, 90);
   position: relative;
 }
 
 .modal__content h2 {
-  color: var(--light-blue);
+  color: black;
+  
 }
 
 .modal__content .btn {
