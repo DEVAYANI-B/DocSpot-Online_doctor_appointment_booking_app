@@ -15,13 +15,7 @@ const AboutUs = () => {
           </div>
           <div className="hero-content">
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam tenetur doloremque molestias repellat minus asperiores
-              in aperiam dolor, quaerat praesentium. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Voluptatibus, repudiandae! Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Provident
-              quibusdam doloremque ex? Officia atque ab dolore? Tempore totam
-              non ea!
+            Discover the future of medical appointment booking with our innovative online platform. At DocSpot, we streamline the process, making it effortless to schedule appointments with healthcare professionals. With intuitive features and real-time availability updates, you can book check-ups, consultations, and urgent care appointments with ease. Say goodbye to long wait times and phone calls – join us today and take charge of your healthcare journey effortlessly.
             </p>
           </div>
         </div>

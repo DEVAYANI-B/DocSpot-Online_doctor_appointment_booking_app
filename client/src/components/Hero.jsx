@@ -7,13 +7,11 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>
-          Your Health, <br />
-          Our Responsibility
+          DocSpot <br />
+          Instant Health Connections at Your Fingertips
         </h1>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          tenetur doloremque molestias repellat minus asperiores in aperiam
-          dolor, quaerat praesentium.
+        "Nurturing Health, Embracing Vitality: Your Pathway to Purposeful Living."
         </p>
       </div>
       <div className="hero-img">

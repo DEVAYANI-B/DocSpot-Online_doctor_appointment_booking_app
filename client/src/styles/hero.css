@@ -23,10 +23,11 @@
 
 .hero-img {
   flex: 1;
+  
 }
 
 .hero-img img {
-  width: 100%;
+  width: 75%;
 }
 
 .about {
