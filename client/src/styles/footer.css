@@ -1,7 +1,7 @@
 @import url(app.css);
 
 footer {
-  background-color: var(--light-text-color);
+  background: linear-gradient(115deg,  #411717,#ffffff);
 }
 
 .footer {

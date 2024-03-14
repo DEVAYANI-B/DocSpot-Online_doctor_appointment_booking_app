@@ -9,6 +9,7 @@ import HomeCircles from "../components/HomeCircles";
 const Home = () => {
   return (
     <>
+  
       <Navbar />
       <Hero />
       <AboutUs />
