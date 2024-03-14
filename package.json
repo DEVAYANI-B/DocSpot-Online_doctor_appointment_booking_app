@@ -18,5 +18,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^5.9.2",
     "mongoose": "^6.12.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
