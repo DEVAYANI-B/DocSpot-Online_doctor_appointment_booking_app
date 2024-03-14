@@ -1,7 +1,8 @@
 @import url(app.css);
 
 footer {
-  background: linear-gradient(115deg,  #411717,#ffffff);
+  background: #011225;
+  box-shadow: 0 0 15px rgb(139, 184, 188);
 }
 
 .footer {
@@ -12,16 +13,17 @@ footer {
   height: 100%;
   margin: auto;
   padding: 2rem 0;
+
 }
 
 .footer h3 {
-  color: var(--light-blue);
+  color:antiquewhite;
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
 
 .footer a {
-  color: var(--light-blue);
+ color:antiquewhite;
 }
 
 .footer-links ul {
@@ -81,7 +83,7 @@ footer {
 }
 
 .footer-bottom a {
-  color: var(--dark-blue);
+  color: antiquewhite;
 }
 
 @media screen and (max-width: 550px) {

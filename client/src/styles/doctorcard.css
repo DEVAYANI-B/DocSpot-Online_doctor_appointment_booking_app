@@ -7,7 +7,7 @@
   border-radius: 10px;
   padding: 1.5rem 2rem;
   box-shadow: 0 0 10px 0 rgb(188, 188, 188);
-  background: linear-gradient(115deg, #041e57,#022040, rgba(9, 75, 146, 0.615));
+  background: linear-gradient(115deg,  #000000,  rgb(1, 75, 82),#541414);
 }
 
 .card-img {
@@ -29,6 +29,11 @@
   font-size: 0.8rem;
   padding: 1rem;
   margin: 1rem auto;
+  background: #0b8da7;
+  color: rgb(4, 2, 26);
+box-shadow: 0 0 15px #7fc6ad;
+  
+
 }
 
 .card p {
